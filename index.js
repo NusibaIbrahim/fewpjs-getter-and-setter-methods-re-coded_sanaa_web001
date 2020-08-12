@@ -23,6 +23,6 @@ class Circle {
 circle = new Circle(6);
 circle.diameter;
 circle.diameter = 36;
-circle.area.least;
-circle.area.most;
+circle.circumference
+circle.area;
 circle.circumference = 100;
