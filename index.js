@@ -8,16 +8,16 @@ class Circle {
     return this.radius * 2;
   }
   get circumference() {
-    return Math.pi * this.radius * 2;
+    return Math.PI * this.radius * 2;
   }
   get area() {
-    return Math.pi * this._radius * this.radius;
+    return Math.PI * this._radius * this.radius;
   }
   set diameter(Diameter) {
     this.radius = Diameter / 2;
   }
   set circumference(Circumference) {
-    this.radius = Circumference / (Math.pi * 2);
+    this.radius = Circumference / (Math.PI * 2);
   }
 }
 circle = new Circle(6);
