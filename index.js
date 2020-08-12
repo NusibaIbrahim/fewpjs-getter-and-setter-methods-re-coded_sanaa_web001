@@ -1,5 +1,3 @@
-// Add your Circle class here
-
 let circle;
 
 class Circle {
@@ -7,25 +5,24 @@ class Circle {
     this.radius = radius;
   }
   get diameter() {
-    return Diameter;
+    return this.radius * 2;
   }
   get circumference() {
-    return Circumference ;
+    return math.pi * this.radius * 2;
   }
   get area() {
-    return Area;
+    return math.pi * this.radius * this.radius;
   }
-  set diameter(){
-    Diameter = this.radius * 2
+  set diameter(Diameter) {
+    this.radius = Diameter / 2;
   }
-  set circumference(){
-    Circumference = math.pi * this.Diameter
+  set circumference(Circumference) {
+    this.radius = Circumference / (math.pi * 2);
   }
-  set area() {
-    Area = math.pi * this.radius * this.radius;
 }
 circle = new Circle(6);
-circle.diameter ;
+circle.diameter;
 circle.diameter = 36;
 circle.circumference;
 circle.circumference = 100;
+circle.area;
