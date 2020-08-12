@@ -8,7 +8,7 @@ class Circle {
     return this.radius * 2;
   }
   get circumference() {
-    return Math.PI * this.radius * 2;
+    return Math.PI * this.diameter;
   }
   get area() {
     return Math.PI * this._radius * this.radius;
